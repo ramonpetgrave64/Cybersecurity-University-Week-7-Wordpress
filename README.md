@@ -29,7 +29,7 @@ Time spent: **X** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.3
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: ![WP 4.2 xss post gif](https://github.com/ramonpetgrave64/Cybersecurity-University-Week-7-Wordpress/blob/master/xss%20postgif?raw=true)
   - [ ] Steps to recreate: 
     - Create a user with posting privileges. Create a new post and eneter the code below into the post's text editor, rather than the visual editor. Publish and view the post.
     - ```<a href="[caption code=">]</a><a title=" onmouseover=alert('XSS')  ">link</a>```
