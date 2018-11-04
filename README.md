@@ -5,7 +5,7 @@ example attacks on Wordpress
 
 Time spent: **X** hours spent in total
 
-> Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
+> Objective: Find, analyze, recreate, and document vulnerabilities affecting an old version of WordPress
 
 ## Pentesting Report
 
@@ -38,15 +38,18 @@ Time spent: **X** hours spent in total
   - [ ] Affected source code:
     - [Changeset 33359](https://core.trac.wordpress.org/changeset/33359)
     
-3. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
+3. Wordpress 4.2 - Large File Upload XSS, CVE 2017-9061
+  - [ ] Summary: This XSS attack is carried out when attempting to upload a file that exceeds a file-size limit. The script is put file's name. When the file-size limit error is triggered, WordPress outputs on the page an error message containing the file's name, without escaping or sanitizing.
     - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.15
+  - [ ] GIF Walkthrough: ![WP 4.2 xss file upload gif](https://raw.githubusercontent.com/ramonpetgrave64/Cybersecurity-University-Week-7-Wordpress/master/xss%20file%20upload.gif?token=Ae5bC6NqBSD9BZVkEPhxFOmK20waq-Niks5b55qswA%3D%3D)
   - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - Get a file that is too large for the WordPress site to upload, e.g. a 10MB file. Rename the file to something like below and upload through the administration page's ```Media -> Add New'''
+    - ``` my too big file<img src=x onerror=alert(1)>.png```
+  - [ ] Affected source code: 
+    - [wp-includes/script-loader.php](https://core.trac.wordpress.org/changeset/37375/branches/4.2/src/wp-includes/script-loader.php?contextall=1&old=32211&old_path=%2Ftrunk%2Fsrc%2Fwp-includes%2Fscript-loader.php)
+    - [wp-includes/js/plupload/handlers.js](https://core.trac.wordpress.org/changeset/40742/branches/4.2/src/wp-includes/js/plupload/handlers.js?old=31690&old_path=trunk%2Fsrc%2Fwp-includes%2Fjs%2Fplupload%2Fhandlers.js)
 
 ## Assets
 
