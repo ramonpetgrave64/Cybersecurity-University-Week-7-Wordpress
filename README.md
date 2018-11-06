@@ -3,7 +3,7 @@ example attacks on Wordpress
 
 # Project 7 - WordPress Pentesting
 
-Time spent: **X** hours spent in total
+Time spent: 10 hours spent in total
 
 > Objective: Find, analyze, recreate, and document vulnerabilities affecting an old version of WordPress
 
