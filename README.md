@@ -69,7 +69,7 @@ I got around this by proceeding through http://wpdistillery.vm/wp-admin/setup-co
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2018] [Ramon Petgrave]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
